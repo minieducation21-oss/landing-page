@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Win Big Today</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 18px;
+  color: #facc15;
+  margin: 10px 0;
+}
+
+.btn {
+  display: block;
+  margin-top: 15px;
+  padding: 14px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  animation: pulse 1.5s infinite;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.trust {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+  <h1>🔥 Limited Time Offer</h1>
+  
+  <p>
+    Join now & get <span class="highlight">Instant Bonus</span><br>
+    Start earning today 💰
+  </p>
+
+  <div class="timer" id="timer">Offer ends in: 02:00</div>
+
+  <a class="btn" href="https://tigerwin.live/#/register">
+    👉 Register & Start Now
+  </a>
+
+  <p class="trust">✔ 1000+ users joined today</p>
+  <p class="trust">✔ Fast withdrawal</p>
+</div>
+
+<script>
+let time = 120;
+let timer = document.getElementById("timer");
+
+setInterval(() => {
+  let min = Math.floor(time / 60);
+  let sec = time % 60;
+  timer.innerHTML = `Offer ends in: ${min}:${sec < 10 ? "0" : ""}${sec}`;
+  if (time > 0) time--;
+}, 1000);
+</script>
+
+</body>
+</html>
