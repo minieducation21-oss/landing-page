@@ -3,114 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win Big Today</title>
+<title>Work From Home</title>
 
 <style>
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background:#0f172a;
+  color:white;
+  text-align:center;
 }
 
-.box {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 15px;
-  text-align: center;
-  width: 90%;
-  max-width: 350px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  animation: fadeIn 1s ease;
+.container {
+  padding:30px 15px;
 }
 
 h1 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size:22px;
 }
 
-.highlight {
-  color: #22c55e;
-  font-weight: bold;
-}
-
-.timer {
-  font-size: 18px;
-  color: #facc15;
-  margin: 10px 0;
+p {
+  font-size:14px;
+  color:#cbd5e1;
 }
 
 .btn {
-  display: block;
-  margin-top: 15px;
-  padding: 14px;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  animation: pulse 1.5s infinite;
+  display:block;
+  background:#22c55e;
+  color:white;
+  padding:15px;
+  margin:20px auto;
+  width:90%;
+  max-width:320px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.box {
+  background:#1e293b;
+  padding:15px;
+  border-radius:10px;
+  margin-top:15px;
 }
 
-.trust {
-  font-size: 13px;
-  color: #94a3b8;
-  margin-top: 10px;
-}
-
-@keyframes pulse {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.05);}
-  100% {transform: scale(1);}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
+.timer {
+  color:#f87171;
+  font-weight:bold;
 }
 </style>
 
 </head>
+
 <body>
 
+<div class="container">
+
+<h1>🔥 Earn ₹5000 Daily From Home</h1>
+<p>Limited seats only – Join today</p>
+
 <div class="box">
-  <h1>🔥 Limited Time Offer</h1>
-  
-  <p>
-    Join now & get <span class="highlight">Instant Bonus</span><br>
-    Start earning today 💰
-  </p>
-
-  <div class="timer" id="timer">Offer ends in: 02:00</div>
-
-  <a class="btn" href="https://tigerwin.live/#/register">
-    👉 Register & Start Now
-  </a>
-
-  <p class="trust">✔ 1000+ users joined today</p>
-  <p class="trust">✔ Fast withdrawal</p>
+  ✅ No Investment  
+  <br>✅ Daily Payment  
+  <br>✅ Work from Mobile
 </div>
 
-<script>
-let time = 120;
-let timer = document.getElementById("timer");
+<a class="btn" href="https://wa.me/91XXXXXXXXXX">
+👉 Register on WhatsApp
+</a>
 
-setInterval(() => {
-  let min = Math.floor(time / 60);
-  let sec = time % 60;
-  timer.innerHTML = `Offer ends in: ${min}:${sec < 10 ? "0" : ""}${sec}`;
-  if (time > 0) time--;
-}, 1000);
-</script>
+<p class="timer">⏳ Offer ending soon</p>
+
+<div class="box">
+  ⭐ 1200+ People Joined Today  
+</div>
+
+</div>
 
 </body>
 </html>
